@@ -1,4 +1,4 @@
-baseurl = "https://affectionate-turing-8ce7ad.netlify.app/"
+baseurl = "/"
 languageCode = "en-us"
 title = "Nick Pondel"
 theme = "hugo-lithium"
