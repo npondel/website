@@ -7,9 +7,8 @@ title: About
 A simple little site for sharing things I find interesting.
 
 ### How?
-Build on the [blogdown](https://github.com/rstudio/blogdown) package for R, thanks to the awesome work of [Yihui Xie](https://yihui.org).
+- Build on the [blogdown](https://github.com/rstudio/blogdown) package for R, thanks to the awesome work of [Yihui Xie](https://yihui.org).
+- Continuous Depoyment via Netlify
 
 ### You can also find me on
 - [Github](https://github.com/npondel)
-
-### Testing CI

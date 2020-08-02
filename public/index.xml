@@ -18,8 +18,7 @@
       
       <guid>/about/</guid>
       <description>What dis? A simple little site for sharing things I find interesting.
-How? Build on the blogdown package for R, thanks to the awesome work of Yihui Xie.
-You can also find me on  Github  Testing CI </description>
+How?  Build on the blogdown package for R, thanks to the awesome work of Yihui Xie. Continuous Depoyment via Netlify  You can also find me on  Github  </description>
     </item>
     
     <item>
