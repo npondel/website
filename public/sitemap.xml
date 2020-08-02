@@ -8,11 +8,27 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/resume/</loc>
+    <lastmod>2029-08-02T13:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/08/02/first-post/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
   </url>
   
   <url>

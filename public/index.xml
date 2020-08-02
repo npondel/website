@@ -6,6 +6,7 @@
     <description>Recent content on Nick Pondel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +18,27 @@
       
       <guid>/about/</guid>
       <description>What dis? A simple little site for sharing things I find interesting.
-How? Build on the blogdown package for R, thanks to the awesome work of Yihui Xie.</description>
+How? Build on the blogdown package for R, thanks to the awesome work of Yihui Xie.
+You can also find me on  Github  </description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>/resume/</link>
+      <pubDate>Thu, 02 Aug 2029 13:00:00 -0600</pubDate>
+      
+      <guid>/resume/</guid>
+      <description>Contact  nick@nickpondel.com https://github.com/npondel  Education  MPH - Biomedical Informatics  The Ohio State University - 2019 Project: Creating Structured Data from Mixed Free-Text and Categorical Data  Github Repo - PDF Link   Contributed to research on identifying child maltreatement risk factors from EMS record data at Nationwide Children&amp;rsquo;s Hospital in Columbus, OH. Publications for this are still pending.   BS - Health and Rehabiliation Sciences  The Ohio State University - 2016 Specialization: Medical Laboratory Science    Credentials  Medical Laboratory Scientist (ASCP) Epic Client Systems Administrator Citrix Virtual Apps and Desktops - Associate  Skills  Coding/Scripting Languages  Extensive experience with R and Shiny AutoHotKey, PowerShell, and Python   Computer Systems Administration  EHR System Architecture Windows Server and Ubuntu Server   Medical Laboratory  Hematology and Coagulation Laboratory Systems and Automation    </description>
+    </item>
+    
+    <item>
+      <title>First Post!</title>
+      <link>/2020/08/02/first-post/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/08/02/first-post/</guid>
+      <description>Trying yet again to create a simple website for myself, this time using my old friend R and the blogdown package.
+Stick around&amp;hellip;more to come in the future&amp;hellip;</description>
     </item>
     
   </channel>
