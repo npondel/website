@@ -25,7 +25,7 @@ title: Resume
 ## Skills
 - Coding/Scripting Languages
   - Extensive experience with R and Shiny
-  - AutoHotKey, PowerShell, and Python
+  - AutoHotKey, PowerShell, SQL, and Python
 - Computer Systems Administration
   - EHR System Architecture
   - Windows Server and Ubuntu Server
