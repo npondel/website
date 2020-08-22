@@ -116,3 +116,18 @@ messy.data %>%
 Documenting this because:  
 1. It's amazing what enough time banging your head against a problem will do  
 2. I'll probably run into this problem again and have forgotten how to do it
+
+### Update 08/22/20 - "Warning: Values in 'val' are not uniquely identified..."
+Ok so hitting this warning, it looks like there's an easy way to just assign row IDs and then remove them to allow the pivot to work without creating any annoying list-columns.
+```{r}
+messy.data %>%
+  group_by(text) %>%
+  mutate(row = row_number()) %>% # assign row IDs
+  pivot_wider(
+    names_from = text,
+    values_from = text
+  ) %>%
+  select(-row) %>% # remove row IDs
+  unite("name", sep = ", ", -1, na.rm = T)
+```
+

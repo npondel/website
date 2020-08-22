@@ -62,7 +62,7 @@
 
   <article class="article">
     
-    <span class="article-duration">3 min read</span>
+    <span class="article-duration">4 min read</span>
     
 
     <h1 class="article-title">Thank you, TidyR</h1>
@@ -174,6 +174,26 @@ messy.data %&gt;%
 <p>Documenting this because:<br />
 1. It’s amazing what enough time banging your head against a problem will do<br />
 2. I’ll probably run into this problem again and have forgotten how to do it</p>
+<div id="update-082220---warning-values-in-val-are-not-uniquely-identified" class="section level3">
+<h3>Update 08/22/20 - “Warning: Values in ‘val’ are not uniquely identified…”</h3>
+<p>Ok so hitting this warning, it looks like there’s an easy way to just assign row IDs and then remove them to allow the pivot to work without creating any annoying list-columns.</p>
+<pre class="r"><code>messy.data %&gt;%
+  group_by(text) %&gt;%
+  mutate(row = row_number()) %&gt;% # assign row IDs
+  pivot_wider(
+    names_from = text,
+    values_from = text
+  ) %&gt;%
+  select(-row) %&gt;% # remove row IDs
+  unite(&quot;name&quot;, sep = &quot;, &quot;, -1, na.rm = T)</code></pre>
+<pre><code>## # A tibble: 4 x 2
+##      id name                           
+##   &lt;dbl&gt; &lt;chr&gt;                          
+## 1     1 hi, some data                  
+## 2     2 woo hoo, more character strings
+## 3     3 help me                        
+## 4     4 tidyr</code></pre>
+</div>
 
     </div>
   </article>
