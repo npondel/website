@@ -13,26 +13,37 @@
   </url>
   
   <url>
+    <loc>/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/08/21/thank-you-tidyr/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020/08/02/first-post/</loc>
     <lastmod>2020-08-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
   </url>
   
 </urlset>

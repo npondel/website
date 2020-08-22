@@ -6,7 +6,7 @@
     <description>Recent content on Nick Pondel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -27,7 +27,17 @@ How?  Build on the blogdown package for R, thanks to the awesome work of Yihui X
       <pubDate>Thu, 02 Aug 2029 13:00:00 -0600</pubDate>
       
       <guid>/resume/</guid>
-      <description>Contact  nick@nickpondel.com https://github.com/npondel  Education  MPH - Biomedical Informatics  The Ohio State University - 2019 Project: Creating Structured Data from Mixed Free-Text and Categorical Data  Github Repo - PDF Link   Contributed to research on identifying child maltreatement risk factors from EMS record data at Nationwide Children&amp;rsquo;s Hospital in Columbus, OH. Publications for this are still pending.   BS - Health and Rehabiliation Sciences  The Ohio State University - 2016 Specialization: Medical Laboratory Science    Credentials  Medical Laboratory Scientist (ASCP) Epic Client Systems Administrator Citrix Virtual Apps and Desktops - Associate  Skills  Coding/Scripting Languages  Extensive experience with R and Shiny AutoHotKey, PowerShell, and Python   Computer Systems Administration  EHR System Architecture Windows Server and Ubuntu Server   Medical Laboratory  Hematology and Coagulation Laboratory Systems and Automation    </description>
+      <description>Contact  nick@nickpondel.com https://github.com/npondel  Education  MPH - Biomedical Informatics  The Ohio State University - 2019 Project: Creating Structured Data from Mixed Free-Text and Categorical Data  Github Repo - PDF Link   Contributed to research on identifying child maltreatement risk factors from EMS record data at Nationwide Children&amp;rsquo;s Hospital in Columbus, OH. Publications for this are still pending.   BS - Health and Rehabiliation Sciences  The Ohio State University - 2016 Specialization: Medical Laboratory Science    Credentials  Medical Laboratory Scientist (ASCP) Epic Client Systems Administrator Citrix Virtual Apps and Desktops - Associate  Skills  Coding/Scripting Languages  Extensive experience with R and Shiny AutoHotKey, PowerShell, SQL, and Python   Computer Systems Administration  EHR System Architecture Windows Server and Ubuntu Server   Medical Laboratory  Hematology and Coagulation Laboratory Systems and Automation    </description>
+    </item>
+    
+    <item>
+      <title>Thank you, TidyR</title>
+      <link>/2020/08/21/thank-you-tidyr/</link>
+      <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/08/21/thank-you-tidyr/</guid>
+      <description>While I was working on my MPH program, I had to solve a problem which at the time seemed like a complex task. Combining and transforming some “messy” data with multiple rows per encounter into a tidy dataset for NLP analysis.
+messy.data ## id text ## 1 1 hi ## 2 1 some data ## 3 2 woo hoo ## 4 2 more character strings ## 5 3 help me ## 6 4 tidyr as.</description>
     </item>
     
     <item>

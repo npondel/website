@@ -1,0 +1,110 @@
+---
+title: Thank you, TidyR
+author: Nick Pondel
+date: '2020-08-21'
+slug: thank-you-tidyr
+tags:
+  - R
+---
+
+
+
+<p>While I was working on my MPH program, I had to solve a problem which at the time seemed like a complex task. Combining and transforming some “messy” data with multiple rows per encounter into a tidy dataset for NLP analysis.</p>
+<pre class="r"><code>messy.data</code></pre>
+<pre><code>##   id                   text
+## 1  1                     hi
+## 2  1              some data
+## 3  2                woo hoo
+## 4  2 more character strings
+## 5  3                help me
+## 6  4                  tidyr</code></pre>
+<pre class="r"><code>as.data.frame(fixed.data)</code></pre>
+<pre><code>##   id                            name
+## 1  1                   hi, some data
+## 2  2 woo hoo, more character strings
+## 3  3                         help me
+## 4  4                           tidyr</code></pre>
+<p>Because I had about 3 weeks worth of experience doing “real” R work by then, I went about doing this in just about the hackiest fashion possible: hijacking some functions from <a href="https://quanteda.io">quanteda</a> and using dplyr to mash the data into what I wanted.</p>
+<p>The code looked something like this…</p>
+<pre class="r"><code>narrative_raw &lt;- read.csv(&quot;path/to/data&quot;, header = TRUE)
+
+#new dataframe with only needed columns
+narrative &lt;- data.frame(&quot;KEY_CASE&quot; = narrative_raw$KEY_CASE,
+                         &quot;text&quot; = narrative_raw$COMMENTTEXT)
+
+narrative$KEY_CASE &lt;- as.character(narrative$KEY_CASE)
+narrative$text &lt;- as.character(narrative$text)
+
+#create corpus from data, thus creating duplicate IDs
+corpus1 &lt;- corpus(narrative, docid_field = &quot;KEY_CASE&quot;, text_field = &quot;text&quot;)
+
+#pull out IDs and text as separate dataframes then bind columns
+text_df &lt;- data.frame(texts(corpus1))
+docid_df &lt;- data.frame(docnames(corpus1))
+duplicate_id_df &lt;- bind_cols(docid_df, text_df)
+
+duplicate_id_df$docnames.corpus1. &lt;- as.character(duplicate_id_df$docnames.corpus1.)
+duplicate_id_df$texts.corpus1. &lt;- as.character(duplicate_id_df$texts.corpus1.)
+
+#pull out extra numbers to another column
+duplicate_id_df$occurances &lt;- gsub(&quot;.*}&quot;, &quot;&quot;, duplicate_id_df$docnames.corpus1.)
+
+#remove periods from occurances column
+duplicate_id_df$occurances &lt;- gsub(&quot;[.]*&quot;, &quot;&quot;, duplicate_id_df$occurances)
+
+#remove extra numbers from ID column
+duplicate_id_df$docnames.corpus1. &lt;- gsub(&quot;(}).*&quot;,&quot;\\1&quot;,duplicate_id_df$docnames.corpus1.)
+
+#define occurances as a numeric variable
+duplicate_id_df$occurances &lt;- as.numeric(duplicate_id_df$occurances)
+
+#replace all blank fields with a 0
+duplicate_id_df$occurances[is.na(duplicate_id_df$occurances)] &lt;- 0
+
+#reshaping long to wide
+shape1 &lt;- reshape(duplicate_id_df, timevar = &quot;occurances&quot;, idvar = &quot;docnames.corpus1.&quot;, direction = &quot;wide&quot;)
+
+#set NA values to blank to avoid strings of NA characters later
+shape1[is.na(shape1)] &lt;- &quot;&quot;
+
+#unite columns from reshape
+shape1 &lt;- unite(shape1, combined_text, remove = TRUE, -1, sep = &quot;  &quot;)
+
+#rename columns to originals
+names(shape1)[names(shape1) == &quot;docnames.corpus1.&quot;] &lt;- &quot;KEY_CASE&quot;
+names(shape1)[names(shape1) == &quot;combined_text&quot;] &lt;- &quot;narrative_text&quot;</code></pre>
+<p>Gross.</p>
+<p>This morning I ran into THE EXACT SAME PROBLEM, remembered I had done this in grad school, took one look at my old code, and knew there HAD to be a more efficient method.</p>
+<p>Well of course there was, thanks to the <code>pivot_wider</code> function in <a href="https://github.com/tidyverse/tidyr/releases/tag/v1.0.0">tidyr v1.0.0</a>.</p>
+<p>Time to accomplish this in 6 lines of code instead of 40…</p>
+<pre class="r"><code># pivot_wider mutates the &quot;long&quot; data into a &quot;wide&quot; structure
+# No more duplicate IDs!
+messy.data %&gt;%
+  pivot_wider(
+    names_from = text,
+    values_from = text
+  ) </code></pre>
+<pre><code>## # A tibble: 4 x 7
+##      id hi    `some data` `woo hoo` `more character strings` `help me` tidyr
+##   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;       &lt;chr&gt;     &lt;chr&gt;                    &lt;chr&gt;     &lt;chr&gt;
+## 1     1 hi    some data   &lt;NA&gt;      &lt;NA&gt;                     &lt;NA&gt;      &lt;NA&gt; 
+## 2     2 &lt;NA&gt;  &lt;NA&gt;        woo hoo   more character strings   &lt;NA&gt;      &lt;NA&gt; 
+## 3     3 &lt;NA&gt;  &lt;NA&gt;        &lt;NA&gt;      &lt;NA&gt;                     help me   &lt;NA&gt; 
+## 4     4 &lt;NA&gt;  &lt;NA&gt;        &lt;NA&gt;      &lt;NA&gt;                     &lt;NA&gt;      tidyr</code></pre>
+<pre class="r"><code># adding a &quot;unite&quot; at the end collapses all columns except #1 into a single text column
+messy.data %&gt;%
+  pivot_wider(
+    names_from = text,
+    values_from = text
+  ) %&gt;%
+  unite(&quot;name&quot;, sep = &quot;, &quot;, -1, na.rm = T)</code></pre>
+<pre><code>## # A tibble: 4 x 2
+##      id name                           
+##   &lt;dbl&gt; &lt;chr&gt;                          
+## 1     1 hi, some data                  
+## 2     2 woo hoo, more character strings
+## 3     3 help me                        
+## 4     4 tidyr</code></pre>
+<p>Documenting this because:<br />
+1. It’s amazing what enough time banging your head against a problem will do<br />
+2. I’ll probably run into this problem again and have forgotten how to do it</p>
