@@ -41,3 +41,4 @@ title: Resume
 - Medical Laboratory
   - Hematology and Coagulation
   - Laboratory Systems and Automation
+
