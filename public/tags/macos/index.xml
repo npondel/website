@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MacOS on Nick Pondel</title>
+    <link>/tags/macos/</link>
+    <description>Recent content in MacOS on Nick Pondel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BitBar - Add scripts to your MacOS menu bar</title>
+      <link>/2020/09/15/bitbar-add-scripts-to-your-macos-menu-bar/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/09/15/bitbar-add-scripts-to-your-macos-menu-bar/</guid>
+      <description>Via the Automators Podcast I learned about a little utility which one can use to take any script written in shell, Ruby, Python, etc. and output the results as a Mac menu bar item.
+The tool is called Bitbar, and it can be downloaded quickly in Homebrew with
+~$ brew cask install bitbar
+But why&amp;hellip;? With the power of scripting, you can put literally anything into your menu bar, assuming you can write a script to grab that data.</description>
+    </item>
+    
+  </channel>
+</rss>

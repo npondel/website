@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.74.3" />
+
+
+<title>BitBar - Add scripts to your MacOS menu bar - Nick Pondel</title>
+<meta property="og:title" content="BitBar - Add scripts to your MacOS menu bar - Nick Pondel">
+
+
+  <link href='/logo.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.jpg"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://nickpondel.myportfolio.com">Photo Portfolio</a></li>
+    
+    <li><a href="/resume/">Resume</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">BitBar - Add scripts to your MacOS menu bar</h1>
+
+    
+    <span class="article-date">2020-09-15</span>
+    
+
+    <div class="article-content">
+      <p>Via the <a href="https://www.relay.fm/automators/58">Automators Podcast</a> I learned about a little utility which one can use to take any script written in shell, Ruby, Python, etc. and output the results as a Mac menu bar item.</p>
+<p>The tool is called <a href="https://github.com/matryer/bitbar">Bitbar</a>, and it can be downloaded quickly in <a href="https://brew.sh">Homebrew</a> with<br>
+<code>~$ brew cask install bitbar</code></p>
+<p>But why&hellip;?  With the power of scripting, you can put <em>literally anything</em> into your menu bar, assuming you can write a script to grab that data.</p>
+<h3 id="setup">Setup</h3>
+<p>Once bitbar is installed via homebrew, the only configuration is to point it at a folder of scripts which you&rsquo;d like to use.  Be sure all the script files have executable permissions or you&rsquo;ll get an error.<br>
+<code>chmod +x my-script.sh</code></p>
+<h3 id="examples">Examples</h3>
+<p>There are a metric crap-ton of &ldquo;plugins&rdquo; that folks have written, which are compiled in a repo here.  <a href="https://github.com/matryer/bitbar-plugins">https://github.com/matryer/bitbar-plugins</a>.  It even includes information on <a href="https://github.com/matryer/bitbar#writing-plugins">writing your own</a></p>
+<p>Here are a few simple ones I whipped up already.</p>
+<p>Get your external IP (note the &ldquo;silent&rdquo; flag or you&rsquo;ll get some response codes too)</p>
+<pre><code>#!/bin/bash
+curl --silent wtfismyip.com/text
+</code></pre><p><img src="/images/external-ip.png" alt="external IP results"></p>
+<p>Weather, using <a href="http://wttr.in">wttr.in</a></p>
+<pre><code>#!/bin/bash
+curl --silent wttr.in/?format=2
+</code></pre><p><img src="/images/weather.png" alt="weather results"></p>
+<p>``</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
