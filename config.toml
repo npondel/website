@@ -16,9 +16,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     name = "Resume"
     url = "/resume/"
-[[menu.main]]
-    name = "Photo Portfolio"
-    url = "https://nickpondel.myportfolio.com"
 
 [params]
     description = "Nick Pondel's Personal Site"

@@ -12,25 +12,6 @@
     
     
     <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 02 Aug 2029 13:00:00 -0600</pubDate>
-      
-      <guid>/about/</guid>
-      <description>What dis? A simple little site for sharing things I find interesting.
-How?  Build on the blogdown package for R, thanks to the awesome work of Yihui Xie. Continuous Depoyment via Netlify  You can also find me on  Github  </description>
-    </item>
-    
-    <item>
-      <title>Resume</title>
-      <link>/resume/</link>
-      <pubDate>Thu, 02 Aug 2029 13:00:00 -0600</pubDate>
-      
-      <guid>/resume/</guid>
-      <description>Links  nick@nickpondel.com https://github.com/npondel  Education  MPH - Biomedical Informatics  The Ohio State University - 2019 Project: Creating Structured Data from Mixed Free-Text and Categorical Data  Github Repo - PDF Link   Contributed to research on identifying child maltreatement risk factors from EMS record data at Nationwide Children&amp;rsquo;s Hospital in Columbus, OH. Publications still pending.   BS - Health and Rehabiliation Sciences  The Ohio State University - 2016 Specialization: Medical Laboratory Science    Work  Epic Technical Services (Sept 2019 - Present)  Epic Systems Corporation Client Systems - Hyperspace and Desktop   Medical Laboratory Scientist (May 2016 - Aug 2019)  The Ohio State University Wexner Medical Center Primarily worked in Hematology, Coagulation Studies, and Laboratory Automation    Credentials  Medical Laboratory Scientist (ASCP) Epic Client Systems Administrator Citrix Virtual Apps and Desktops - Associate  Skills  Coding/Scripting Languages  Extensive experience with R and Shiny SQL, AutoHotKey, PowerShell, and Python   Computer Systems Administration  EHR System Architecture Windows and Linux Servers Networking   Medical Laboratory  Hematology and Coagulation Laboratory Systems and Automation    </description>
-    </item>
-    
-    <item>
       <title>BitBar - Add scripts to your MacOS menu bar</title>
       <link>/2020/09/15/bitbar-add-scripts-to-your-macos-menu-bar/</link>
       <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>

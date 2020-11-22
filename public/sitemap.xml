@@ -3,16 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2029-08-02T13:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/resume/</loc>
-    <lastmod>2029-08-02T13:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2020/09/15/bitbar-add-scripts-to-your-macos-menu-bar/</loc>
     <lastmod>2020-09-15T00:00:00+00:00</lastmod>
   </url>
