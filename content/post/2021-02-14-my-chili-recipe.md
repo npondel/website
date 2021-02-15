@@ -5,7 +5,7 @@ date: '2021-02-14'
 slug: my-chili-recipe
 ---
 
-Everyone needs a good chili recipe.  My fiance hates beans so Texas chili it is!  This is heavily inspired by [this recipe](https://www.southernliving.com/recipes/west-texas-chili-recipe).
+Everyone needs a good chili recipe.  My fiance hates beans, so Texas chili it is!  This is heavily inspired by [this recipe](https://www.southernliving.com/recipes/west-texas-chili-recipe).
 
 ### Ingredients
 - 2 sweet onions, diced
@@ -26,7 +26,7 @@ Everyone needs a good chili recipe.  My fiance hates beans so Texas chili it is!
 - Whatever else you put on chili
 
 ### Prep
-- Start some olive oil in a stew pot
+- Start some olive oil in a stew pot on medium-high heat
 - Mince the onions and garlic
 - Take the serrano peppers and poke many holes in them
 ### Add solids
@@ -35,7 +35,7 @@ Everyone needs a good chili recipe.  My fiance hates beans so Texas chili it is!
 - Add beef and stir until beef is throughly cooked
 - Add spices (salt, chili powder, cumin, paprika) and cook for 5mins
 ### Add liquids
-- Add tomato paste, diced tomates, and toss in the serrano peppers
+- Add tomato paste, diced tomatoes, and toss in the serrano peppers
 - Add 1 cup water and bottle of lager beer
 - Cook on low (just barely bubbling) for 30 mins
 ### Keep simmering
