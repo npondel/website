@@ -6,10 +6,39 @@
     <description>Recent content on Nick Pondel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 02 Aug 2029 13:00:00 -0600</pubDate>
+      
+      <guid>/about/</guid>
+      <description>What dis? A simple little site for sharing things I find interesting.
+How?  Build on the blogdown package for R, thanks to the awesome work of Yihui Xie. Continuous Depoyment via Netlify  You can also find me on  Github  </description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>/resume/</link>
+      <pubDate>Thu, 02 Aug 2029 13:00:00 -0600</pubDate>
+      
+      <guid>/resume/</guid>
+      <description>Links  nick@nickpondel.com https://github.com/npondel  Education  MPH - Biomedical Informatics  The Ohio State University - 2019 Project: Creating Structured Data from Mixed Free-Text and Categorical Data  Github Repo - PDF Link   Contributed to research on identifying child maltreatement risk factors from EMS record data at Nationwide Children&amp;rsquo;s Hospital in Columbus, OH. Publications still pending.   BS - Health and Rehabiliation Sciences  The Ohio State University - 2016 Specialization: Medical Laboratory Science    Work  Epic Technical Services (Sept 2019 - Present)  Epic Systems Corporation Client Systems - Hyperspace and Desktop   Medical Laboratory Scientist (May 2016 - Aug 2019)  The Ohio State University Wexner Medical Center Primarily worked in Hematology, Coagulation Studies, and Laboratory Automation    Credentials  Medical Laboratory Scientist (ASCP) Epic Client Systems Administrator Citrix Virtual Apps and Desktops - Associate  Skills  Coding/Scripting Languages  Extensive experience with R and Shiny SQL, AutoHotKey, PowerShell, and Python   Computer Systems Administration  EHR System Architecture Windows and Linux Servers Networking   Medical Laboratory  Hematology and Coagulation Laboratory Systems and Automation    </description>
+    </item>
+    
+    <item>
+      <title>My Chili Recipe</title>
+      <link>/2021/02/14/my-chili-recipe/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/02/14/my-chili-recipe/</guid>
+      <description>Everyone needs a good chili recipe. My fiance hates beans so Texas chili it is! This is heavily inspired by this recipe.
+Ingredients  2 sweet onions, diced 5 garlic cloves, minced 3 serrano peppers 2lbs ground chuck 1tbsp salt 3tbsp ancho chile powder 2tbsp cumin 1tbsp smoked paprika 2 x 14.5oz cans diced tomatoes 1 x 6oz can tomato paste 1 bottle of lager beer 3tbsp masa (regular flour works in a pinch) Olive oil (or canola, or whatever oil) Shredded cheddar Crackers Whatever else you put on chili  Prep  Start some olive oil in a stew pot Mince the onions and garlic Take the serrano peppers and poke many holes in them  Add solids  Add onions and cook until translucent Add garlic and cook for 1-2mins Add beef and stir until beef is throughly cooked Add spices (salt, chili powder, cumin, paprika) and cook for 5mins  Add liquids  Add tomato paste, diced tomates, and toss in the serrano peppers Add 1 cup water and bottle of lager beer Cook on low (just barely bubbling) for 30 mins  Keep simmering  Add another 1 cup water and stir Cook for another 30mins  Thicken it up  Fish out the serrano peppers with tongs Add 3tbps masa and stir Cook for 10 more mins and it&amp;rsquo;s ready to serve  Serve  Serve with your choice of shredded cheddar, oyster crackers, sour cream, etc.</description>
+    </item>
     
     <item>
       <title>BitBar - Add scripts to your MacOS menu bar</title>
